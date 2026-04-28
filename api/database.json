@@ -4,7 +4,32 @@
       "id": 1,
       "ownsBlueJeans": false,
       "socioLocationId": 1
-    }
+    },
+    {
+      "ownsBlueJeans": true,
+      "socioLocationId": 2,
+      "id": 2
+    },
+    [
+      {
+        "ownsBlueJeans": true,
+        "socioLocationId": 2
+      },
+      {
+        "ownsBlueJeans": false,
+        "socioLocationId": 3
+      }
+    ],
+    [
+      {
+        "ownsBlueJeans": true,
+        "socioLocationId": 2
+      },
+      {
+        "ownsBlueJeans": false,
+        "socioLocationId": 3
+      }
+    ]
   ],
   "socioLocations": [
     {
