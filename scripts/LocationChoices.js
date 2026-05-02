@@ -1,7 +1,6 @@
-import { getLocations } from "./dataAccess.js"
 
 export const LocationChoices = async () => {
-    const response = await fetch("http://localhost:8088/socioLocations")
+    const response = await fetch("http://localhost:3000/socioLocations")
     const locations = await response.json()
 
     // Build HTML for radio buttons for location choices
