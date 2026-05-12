@@ -18,5 +18,8 @@ const render = async () => {
         ${submissionsHTML}
     `
 }
+// Add an event listener for our custom event
+document.addEventListener("newSubmissionCreated", render)
+
 
 render()

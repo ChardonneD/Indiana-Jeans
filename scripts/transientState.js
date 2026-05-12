@@ -13,7 +13,7 @@ export const setSocioLocationId = (chosenLocation) => {
     transientState.socioLocationId = chosenLocation
 }
 
-// Function to convert transient state to permanent state
+// Function to dispatch a custom event when the survey submission is saved
 export const saveSurveySubmission = async () => {
     const postOptions = {
         method: "POST",
@@ -24,4 +24,8 @@ export const saveSurveySubmission = async () => {
     }
 
     const response = await fetch("http://localhost:8088/submissions", postOptions)
+
+    // Dispatch a custom event when the submission is complete
+    const newSubmissionEvent = new CustomEvent("newSubmissionCreated")
+    document.dispatchEvent(newSubmissionEvent)
 }
