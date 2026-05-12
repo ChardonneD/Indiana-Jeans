@@ -15,7 +15,7 @@ export const SubmissionList = async () => {
                 <section class="survey-submission-container">
                     <h2>Submission ${submission.id}</h2>
                     <p>Owns Blue Jeans: ${submission.ownsBlueJeans}</p>
-                    <p>Location ID: ${submission.socioLocationId}</p>
+                    <p>Area type: ${submission.socioLocation.label}</p>
                 </section>
             `
         }
