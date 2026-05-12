@@ -7,15 +7,15 @@ const container = document.querySelector("#container")
 
 const render = async () => {
     const jeansHTML = JeanChoices()
-    const locationsHTML = await LocationChoices()
+    // const locationsHTML = await LocationChoices()
     const buttonHTML = SubmissionButton()
-    const submissionsHTML = await SubmissionList()
+    // const submissionsHTML = await SubmissionList()
 
     container.innerHTML = `
         ${jeansHTML}
-        ${locationsHTML}
+        
         ${buttonHTML}
-        ${submissionsHTML}
+        
     `
 }
 
