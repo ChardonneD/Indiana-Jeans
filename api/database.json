@@ -25,20 +25,3 @@
     }
   ]
 }
-      "id": 1,
-      "label": "Urban"
-    },
-    {
-      "id": 2,
-      "label": "Suburban"
-    },
-    {
-      "id": 3,
-      "label": "Semi-Rural"
-    },
-    {
-      "id": 4,
-      "label": "Rural"
-    }
-  ]
-}
